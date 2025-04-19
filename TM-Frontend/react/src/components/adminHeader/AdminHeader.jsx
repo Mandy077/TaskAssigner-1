@@ -58,6 +58,15 @@ const AdminHeader = () => {
           </li>
           <li
             className={
+              location.pathname === "/admin/meetings"
+                ? styles.active
+                : ""
+            }
+          >
+            <Link to="/admin/meetings">Meetings</Link>
+          </li>
+          <li
+            className={
               location.pathname === "/admin/users" ? styles.active : ""
             }
           >

@@ -24,6 +24,7 @@ import CreateTasks from "./pages/ADMIN/createTasks/CreateTasks";
 import AssignedTasks from "./pages/ADMIN/assignedTasks/AssignedTasks";
 import AllTasks from "./pages/ADMIN/allTasks/AllTasks";
 import TaskDetails from "./pages/taskDetails/TaskDetails";
+import { Meetings } from "./pages/ADMIN/meetings/Meetings";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -79,6 +80,7 @@ const router = createBrowserRouter([
         children: [
           { index: true, element: <AdminDashboard /> },
           { path: "extensionRequests", element: <ExtensionRequests /> },
+          { path: "meetings", element: <Meetings /> },
           { path: "users", element: <Users /> },
           { path: "createTask", element: <CreateTasks /> },
           { path: "assignedTasks", element: <AssignedTasks /> },
